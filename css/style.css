@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu_header {
+    color: #ff6b81;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: #333;
+    color: #cecece;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.error{
+    padding: 2%;
+    color: red;
+}
+
+.success{
+    padding: 2%;
+    color: green;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Home */
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.product_home {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product_info {
+    margin-bottom: 15px;
+}
+
+.product_info h1 {
+    margin-bottom: 15px;
+    color: #ff6b81;
+}
+
+.manga_block {
+    text-align: center;
+}
+
+.manga_block h2 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #ffb3c1;
+}
+
+.manga_block h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.manga_block_items {
+    background-color: #333;
+    padding: 15px;
+    box-shadow: inset 0px 0px 3px 0px #000;
+    display: flex;
+    flex-flow: wrap;
+    place-content: center;
+}
+
+.manga_block_items a {
+    color: transparent;
+}
+
+.manga_item {
+    display: inline-block;
+    margin: 10px;
+    width: 25%;
+}
+
+.manga_item h2, .manga_item p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.manga_action:hover {
+    transform: scale(1.02);
+}
+
+.manga_action:hover h3{
+    background-color: #444;
+}
+
+.manga_item img{
+    width: 100%;
+    height: 420px;
+    display: block;
+    margin: auto;
+}
+
+.manga_item h2{
+    padding: 5px;
+    text-align: center !important;
+}
+
+.manga_item h3{
+    padding: 10px 5px;
+    text-align: center !important;
+}
+
+.all_manga {
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    margin-top: 15px;
+    background-color: #ffb3c1;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.all_manga:hover {
+    background-color: rgb(213, 81, 125);
+    color: #fff;
+}
+
+/* Manga */
+
+.product_manga {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Volume */
+
+.volume_title {
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.volume_title a, .volume_title a:hover, .volume_title a:active {
+    text-decoration: none;
+    color: pink;
+    font-weight: 600;
+}
+
+.product_manga_volume {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order_button {
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+    margin-top: 15px;
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.order_button:hover {
+    background-color: rgb(213, 81, 125);
+    color: #fff;
+}
+
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Search */
+
+.search {
+    background-color: #757575;
+    padding: 10px;
+    text-align: center;
+}
+
+.search input[type="search"]{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.search input[type="submit"]{
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.search input[type="submit"]:hover{
+    background-color: rgb(213, 81, 125);
+    color: #fff;
+}
+
+/* Specific manga volumes */
+
+.option {
+    margin-bottom: 20px;
+}
+.option label {
+    font-weight: bold;
+}
+
+/* Cart/Order */
+
+.product_order {
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product_order h1 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.product_order h2, .product_order h3, .product_order p, .product_order input {
+    margin-bottom: 5px;
+}
+
+.product_order fieldset {
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.product_order fieldset input{
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.product_order fieldset input[type="submit"]{
+    background-color: palevioletred;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 15px auto;
+}
+
+.product_order fieldset input[type="submit"]:hover{
+    background-color: rgb(213, 81, 125);
+    color: #fff;
+}
+
+.product_order fieldset p {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
